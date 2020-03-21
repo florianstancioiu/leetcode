@@ -1,6 +1,5 @@
 <?php
+// dificulty:
 // status:
-// problem link:
-// result link:
+// link:
 // runtime: faster than x%
-// memory: less than x%

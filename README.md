@@ -7,3 +7,5 @@
 # Problems that proved to be more than I can handle at the moment of taking
 
 * 5349
+* 1390
+* 74

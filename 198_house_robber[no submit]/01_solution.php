@@ -12,17 +12,35 @@ class Solution
      */
     function rob($nums)
     {
-        $even_sum = 0;
-        $odd_sum = 0;
+        $size = sizeof($nume);
+        $sum = 0;
 
-        for ($i=0; $i<sizeof($nums); $i++) {
-            if ($i % 2 === 0) {
-                $even_sum += $nums[$i];
+        if (sizeof($nums) === 1) {
+            return $nums[0];
+        }
+
+        if (sizeof($nums) === 0) {
+            return 0;
+        }
+
+        if ($nums[0] > $nums[1]) {
+            $start = 0;
+            $sum += $nums[0];
+        } else {
+            $start = 1;
+            $sum += $nums[1];
+        }
+
+        while ($i < $size - 2) {
+            if ($nums[$i + 2] > $nums[$i + 3]) {
+                $sum += $nums[$i + 2];
+                $i += 2;
             } else {
-                $odd_sum += $nums[$i];
+                $sum += $nums[$i + 3];
+                $i += 3;
             }
         }
 
-        return max($even_sum, $odd_sum);
+        return $sum;
     }
 }

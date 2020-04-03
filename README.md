@@ -6,6 +6,7 @@
 * 1396: you use `number_format($nr, $precision)` to set the precision of a float number - yes, it's accurate
 * 1396: the problem can only be solved using `Iterator` objects
 * 202: `str_split` can be used to create an array of digits for numbers
+* 53: [there are 2 versions of kadanes algorithm, one for max sum and one for max elements, this is for the sum, the one on codility is about the elements] - the definitive version of Kadane's algorithm (it includes negative numbers) (the one on codility is the inferior version)
 
 # Problems that proved to be more than I can handle at the moment of taking
 * 5349

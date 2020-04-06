@@ -8,6 +8,7 @@
 * 202: `str_split` can be used to create an array of digits for numbers
 * 53: [there are 2 versions of kadanes algorithm, one for max sum and one for max elements, this is for the sum, the one on codility is about the elements] - the definitive version of Kadane's algorithm (it includes negative numbers) (the one on codility is the inferior version)
 * 122: when you think of peaks and valleys try 2 pointers technique or greedy (learn 2 pointer and greedy...)
+* 49: you can't use the sum of the asci character codes to figure out the permutations of a string because the sums dont add up to distinct numbers
 
 # Problems that proved to be more than I can handle at the moment of taking
 * 5349
